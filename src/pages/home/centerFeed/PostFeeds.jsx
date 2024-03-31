@@ -10,6 +10,8 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import { Autoplay, Pagination, Mousewheel, Keyboard } from 'swiper/modules'
+import { useEffect, useState } from 'react'
+import './Post.css'
 
 const PostFeeds = () => {
   const popularExaminations = [
@@ -42,6 +44,17 @@ const PostFeeds = () => {
       link: 'https://neco.gov.ng/',
     },
   ]
+
+  const [showPagination, setShowPagination] = useState(true)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setShowPagination(window.innerWidth < 900)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const otherExaminations = [
     {
@@ -76,7 +89,7 @@ const PostFeeds = () => {
   ]
 
   return (
-    <div className='space-y-5 px-8 w-full min-h-screen h-full bg-white '>
+    <div className='space-y-5 px-6 w-full min-h-screen h-full bg-white '>
       <div className='py-6'>
         <div className='flex gap-2 items-center mb-8'>
           <button>
@@ -92,6 +105,7 @@ const PostFeeds = () => {
           }}
           pagination={{
             clickable: true,
+            el: showPagination ? '.swiper-pagination' : undefined, // Conditionally show pagination based on screen size
           }}
           style={{
             '--swiper-pagination-color': '#4F0DA3',
@@ -109,13 +123,13 @@ const PostFeeds = () => {
                   src={`https://s3-alpha-sig.figma.com/img/1249/b536/12e40ed0ee40ffe70726c4458d71695d?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N-oal1eQ1TYH1GlqP~HTg6z4WClZ-6OhcKFFWP7zYkFN1PloMfjGxrY8RdaLMoocXG3hQmZPCQ9MyxUD7q4DP8l-Rho-YFXKVQRAOc9NtuuAC0bgV~eJpyg2RkEZVLdZuQAlJfnzhWzeFZBA~qJLrdwDdxeo6~WEbQLTW5aJ2m~cKSrxN~pMX6cfkQc7BWfcAOjzgMyjFqWq2yMZTHqPzo4Ni6Bf8-W-Dc0Jzp8WW0yAq99LVHJZg3QEnM8dCoe-vKI1FktDDF-ZELrv8T4DX6HOjoEHjdi5E5huCS6KQgnbxzKG0WQo4nFxWt~baQQSEh56GIsZyskAQUMi~TtSsA__`}
                 />
               </div>
-              <div className='absolute text-start px-4 bottom-10 z-10'>
-                <h1 className='text-white text-lg py-1 md:py-2'>
+              <div className='absolute text-start px-4 bottom-0 md:bottom-10 z-10'>
+                <h1 className='text-white text-[12px] md:text-lg md:py-2'>
                   WAEC results are out
                 </h1>
-                <h1 className='text-white capitalize text-lg py-1 md:py-2'>
+                <p className='text-white capitalize text-[12px] md:text-lg  md:py-2'>
                   2023 WAEC results are out. Check yours now!
-                </h1>
+                </p>
               </div>
             </SwiperSlide>
           ))}
