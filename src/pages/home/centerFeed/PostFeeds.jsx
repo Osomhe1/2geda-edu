@@ -104,14 +104,16 @@ const PostFeeds = () => {
           {[1, 2, 3].map((key) => (
             <SwiperSlide key={key} className='text-center'>
               <Image src='https://s3-alpha-sig.figma.com/img/b45e/d11c/fd73d0f77c1ef88d89b0bdffa03f6aaa?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=cJkdDbvoqRbQk2BlhkDuD5rb-YyJrAC4A6jUUJQGt2bhGs-qau0n4l2sWwmuafuBF0tQAdtYGe7Dspbd~xaJ6OOMt4DWF7i8eo~Nms8dekFuJRJdbXkcEAeVNlQ4ineDtl2LAOO8KeoYuGe9CMtu25c3Qp559DARQtl7rS605EnputCNg4OdyN2DiC2lem9zzx3~cNYx58dt-Kc4m0iYG-jUa1yCxJCa33FpEwrtZjMEawrLNp~neJbvkESXt3nHwgbkpOZGakdu443BHpbWRZDIDBUqxH1Wbx8dgANEq2TJw7Uk42yGhx1fCxbUo1ep6Ij~IorhVfXbUCzqUdbVYA__' />
-              <div className='absolute px-4 top-4 right-4 z-10'>
+              <div className='absolute flex justify-end px-0 top-0 w-20 md:w-full md:px-4 md:top-4 right-0 md:right-4 z-10'>
                 <Image
                   src={`https://s3-alpha-sig.figma.com/img/1249/b536/12e40ed0ee40ffe70726c4458d71695d?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N-oal1eQ1TYH1GlqP~HTg6z4WClZ-6OhcKFFWP7zYkFN1PloMfjGxrY8RdaLMoocXG3hQmZPCQ9MyxUD7q4DP8l-Rho-YFXKVQRAOc9NtuuAC0bgV~eJpyg2RkEZVLdZuQAlJfnzhWzeFZBA~qJLrdwDdxeo6~WEbQLTW5aJ2m~cKSrxN~pMX6cfkQc7BWfcAOjzgMyjFqWq2yMZTHqPzo4Ni6Bf8-W-Dc0Jzp8WW0yAq99LVHJZg3QEnM8dCoe-vKI1FktDDF-ZELrv8T4DX6HOjoEHjdi5E5huCS6KQgnbxzKG0WQo4nFxWt~baQQSEh56GIsZyskAQUMi~TtSsA__`}
                 />
               </div>
               <div className='absolute text-start px-4 bottom-10 z-10'>
-                <h1 className='text-white py-2'>WAEC results are out</h1>
-                <h1 className='text-white py-2'>
+                <h1 className='text-white text-lg py-1 md:py-2'>
+                  WAEC results are out
+                </h1>
+                <h1 className='text-white capitalize text-lg py-1 md:py-2'>
                   2023 WAEC results are out. Check yours now!
                 </h1>
               </div>
