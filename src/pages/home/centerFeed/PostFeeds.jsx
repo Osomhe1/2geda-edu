@@ -22,13 +22,13 @@ const PostFeeds = () => {
       img: `https://s3-alpha-sig.figma.com/img/bafd/3ae8/263560c8a3a3e457888832d7192773a8?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XkR5nten-D-cPPGhT9TP5ldhVrSjwoQmmIt2MK2ey~8hxNtV0W~d1oFvGE2qIaWSMXXUTeoGFnP~BJbov1YaByfjfW5RqEomlijnO0f0033uHF0bFO9giJeb1gfd-uHfu2gIGUI6Kpe4Zm1kFr5QcWQwHiW-wo3C9-G1dlbGYx9Rncb2XEixtfB1DVRz2g0SIOMAIORDRdiI3Il8XDTrbHxrX8bK2~xtRcND6z2UZ8Hy3pnAX93gCfzx3djlSQXCsQgmntynKyr-PLgqvk3EQ60AslOm1S7~mZctWAHcjnQaNjXhyxQLaJUhKCqyXZCuXkIp9Xt47bnb9p41IA1XPQ__`,
       link: 'https://www.jamb.gov.ng/',
     },
-    {
-      id: 2,
-      acronomy: 'POST UTME',
-      examBody: 'University Entrance Examinations',
-      img: `https://s3-alpha-sig.figma.com/img/2a2c/d2ec/3180185459b976a72ecdf7cdfeb86377?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HrQLL44rRBbAzVvkMTVlmLQnjWXidGaHMamPK8-t37n1BpNI~tvzkA-OJa0xUwnjta2pZNs-k1b3zm4rF94fXjE9ONLwvBXEtULdOOtsQnsk6ek7GvhYOYvKjjCz8t3Neh0EJy8kU4Q1xkCjrH4ntD2rxmlpQ-xmMTr7q~SYk54YIYCj4m3RInXlJwt9zOMmhwlgyuzyT30~5nZQylEeqk3XJ9DGmSGCmJPZ9UaMwP1p29EKjS~KC0Rb1vWkFA6-3vfsvoY6TNeyVNqm1vMisvdZKppe~V41tIeE0qEf2UqhVnAVmqtA6WMdLd1HhDCDyeTlXiV0ctmywuX7W~vmXQ__`,
-      link: 'https://www.jamb.gov.ng/',
-    },
+    // {
+    //   id: 2,
+    //   acronomy: 'POST UTME',
+    //   examBody: 'University Entrance Examinations',
+    //   img: `https://s3-alpha-sig.figma.com/img/2a2c/d2ec/3180185459b976a72ecdf7cdfeb86377?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HrQLL44rRBbAzVvkMTVlmLQnjWXidGaHMamPK8-t37n1BpNI~tvzkA-OJa0xUwnjta2pZNs-k1b3zm4rF94fXjE9ONLwvBXEtULdOOtsQnsk6ek7GvhYOYvKjjCz8t3Neh0EJy8kU4Q1xkCjrH4ntD2rxmlpQ-xmMTr7q~SYk54YIYCj4m3RInXlJwt9zOMmhwlgyuzyT30~5nZQylEeqk3XJ9DGmSGCmJPZ9UaMwP1p29EKjS~KC0Rb1vWkFA6-3vfsvoY6TNeyVNqm1vMisvdZKppe~V41tIeE0qEf2UqhVnAVmqtA6WMdLd1HhDCDyeTlXiV0ctmywuX7W~vmXQ__`,
+    //   link: 'https://www.jamb.gov.ng/',
+    // },
     {
       id: 3,
       acronomy: 'WAEC',
