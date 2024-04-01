@@ -127,7 +127,7 @@ const PostFeeds = () => {
                 <h1 className='text-white text-[12px] md:text-lg md:py-2'>
                   WAEC results are out
                 </h1>
-                <p className='text-white capitalize text-[12px] md:text-lg  md:py-2'>
+                <p className='text-white  capitalize text-[12px] md:text-lg  md:py-2'>
                   2023 WAEC results are out. Check yours now!
                 </p>
               </div>

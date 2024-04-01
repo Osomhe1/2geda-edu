@@ -12,8 +12,13 @@ import { useLocation } from 'react-router-dom'
 import { Input } from '@nextui-org/react'
 
 const Navbar = () => {
-  const { toggleSideBar, sidebarOpen, isMacpro, sidebarMinimized } =
-    useContext(dashboardContext)
+  const {
+    toggleSideBar,
+    sidebarOpen,
+    isMacpro,
+    isMacproHigher,
+    sidebarMinimized,
+  } = useContext(dashboardContext)
   const { pathname } = useLocation()
   // minimized sidebar was omitted for now!
 
@@ -48,13 +53,31 @@ const Navbar = () => {
           <div
             className={` hidden lg:block ${
               isMacpro
-                ? 'ml-[-12rem]'
+                ? 'ml-[-15%]'
+                : isMacproHigher
+                ? ' xl:ml-[-25%] 2xl:ml[-42%] 2xl:ml-[-32%]'
                 : sidebarOpen
-                ? ' ml-[-30rem]'
-                : !sidebarMinimized && !sidebarOpen
-                ? ' ml-[-26em]'
+                ? ' ml-[-50%]'
                 : ''
+              // : !sidebarMinimized && !sidebarOpen
+              // ? ' ml-[-40em]'
+              // : 'ml-[-20em]'
             }`}
+            // className={` hidden lg:block ${
+            //   isMacpro ? 'ml-[-12rem]' : sidebarOpen ? ' ml-[-60rem]' : ''
+            //   // : !sidebarMinimized && !sidebarOpen
+            //   // ? ' ml-[-26em]'
+            //   // : ''
+            // }`}
+            // className={` hidden lg:block ${
+            //   isMacpro
+            //     ? 'ml-[-12rem]'
+            //     : sidebarOpen
+            //     ? ' ml-[-30rem]'
+            //     : !sidebarMinimized && !sidebarOpen
+            //     ? ' ml-[-26em]'
+            //     : ''
+            // }`}
           >
             <img src={logoImg} alt='2geda-logo' className='w-32' />
           </div>
